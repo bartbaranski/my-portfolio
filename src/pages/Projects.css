@@ -1,0 +1,12 @@
+/* src/pages/Projects.css */
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .content {
+    padding-top: 2em;
+  }

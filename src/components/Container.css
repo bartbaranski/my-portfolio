@@ -1,0 +1,15 @@
+/* src/components/Container.css */
+
+.container {
+    
+    width: 70%;
+    margin: 0 auto;
+    padding: 140px 20px 20px; /* Adjusted top padding */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box;
+    min-height: 40em;
+  }
+  
