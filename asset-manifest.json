@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c0054e6b.css",
-    "main.js": "/static/js/main.46342bcf.js",
+    "main.js": "/static/js/main.7784ec42.js",
     "static/media/ms_3.jpg": "/static/media/ms_3.5787dc56dc80fb8c234f.jpg",
     "static/media/ms_2.jpg": "/static/media/ms_2.fe0a2e1af3fe9ddc7161.jpg",
     "static/media/ms_1.jpg": "/static/media/ms_1.d6914b96f4e6fa32cf60.jpg",
@@ -10,15 +10,18 @@
     "static/media/wa_2.jpg": "/static/media/wa_2.5d8664a82d11c5a1c0f8.jpg",
     "static/media/ca_1.jpg": "/static/media/ca_1.48b2268f357bc58c0278.jpg",
     "static/media/ca_3.jpg": "/static/media/ca_3.2c8ebfb879897f1b602a.jpg",
+    "static/media/tumor_1.jpg": "/static/media/tumor_1.09119d82478669cb677d.jpg",
+    "static/media/tumor_3.jpg": "/static/media/tumor_3.489ad5dbd73fcb022cf8.jpg",
+    "static/media/tumor_2.jpg": "/static/media/tumor_2.ee29fe267a8ecd744fe5.jpg",
     "static/media/ca_2.jpg": "/static/media/ca_2.f864694e4f33cbd3a69d.jpg",
     "static/media/ev_1.jpg": "/static/media/ev_1.f02147e7a9cba4aea105.jpg",
     "static/media/ev_2.jpg": "/static/media/ev_2.bcf33b9f7e31f13d67a1.jpg",
     "index.html": "/index.html",
     "main.c0054e6b.css.map": "/static/css/main.c0054e6b.css.map",
-    "main.46342bcf.js.map": "/static/js/main.46342bcf.js.map"
+    "main.7784ec42.js.map": "/static/js/main.7784ec42.js.map"
   },
   "entrypoints": [
     "static/css/main.c0054e6b.css",
-    "static/js/main.46342bcf.js"
+    "static/js/main.7784ec42.js"
   ]
 }
