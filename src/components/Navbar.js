@@ -8,7 +8,13 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-content">
-        <h1>Bartłomiej Barański</h1>
+        <div className="navbar-brand">
+          <span className="brand-mark" aria-hidden="true">BB</span>
+          <div className="brand-copy">
+            <h1>Bartłomiej Barański</h1>
+            <span>Data · Technology · Law</span>
+          </div>
+        </div>
         <div className="navbar-icons">
           <a href="https://www.linkedin.com/in/bartlomiej-baranski-bartbaranski/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin />

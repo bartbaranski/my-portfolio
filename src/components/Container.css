@@ -1,25 +1,40 @@
-/* src/components/Container.css */
-
 .container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2.5rem;
-  margin-top: 110px;
-  margin-bottom: 3rem;
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 18px;
+  width: min(1120px, calc(100% - 40px));
+  min-height: 620px;
+  margin: 0 auto 64px;
+  padding: clamp(32px, 5vw, 64px);
+  position: relative;
+  top: 126px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
   box-shadow: var(--shadow-lg);
-  box-sizing: border-box;
-  min-height: 40em;
+  overflow: hidden;
 }
 
-@media (max-width: 760px) {
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: clamp(32px, 5vw, 64px);
+  width: 92px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+  border-radius: 0 0 5px 5px;
+}
+
+@media (max-width: 980px) {
   .container {
-    margin-top: 160px;
-    padding: 1.5rem;
-    border-radius: 14px;
-    width: calc(100% - 24px);
+    width: calc(100% - 20px);
+    top: 154px;
+    margin-bottom: 84px;
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 34px 22px;
+    border-radius: 20px;
   }
 }

@@ -4,7 +4,7 @@ import React from 'react';
 
 function Home() {
   return (
-    <div className="page-content">
+    <div className="page-content home-page">
         <h2>About me</h2>
 
         <p>
