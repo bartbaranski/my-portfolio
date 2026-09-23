@@ -6,9 +6,15 @@ function Experience() {
       <h2>Experience</h2>
 
       <div className='position-exp'>
+        <p className='title-exp'>Associate Analyst I</p>
+        <p className='workplace-name-exp'>AML RightSource, Kraków, Poland</p>
+        <p className='date-edu'>09.2026 - Present</p>
+      </div>
+
+      <div className='position-exp'>
         <p className='title-exp'>AI Research Associate</p>
         <p className='workplace-name-exp'>Keywords Studios, Katowice, Poland</p>
-        <p className='date-edu'>07.2025 - Present</p>
+        <p className='date-edu'>07.2025 - 09.2026</p>
         <ul>
           <li>Optimized AI model outputs using prompt engineering.</li>
           <li>Performed Quality Checks (QC) on AI-generated content and code (Python, JSON, JavaScript)

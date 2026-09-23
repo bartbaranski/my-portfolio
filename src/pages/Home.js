@@ -8,7 +8,7 @@ function Home() {
         <h2>About me</h2>
 
         <p>
-            I am an <span className='special'>AI Research Associate</span> and a <span className='special'>Master's student in Computer Science</span> at the University of Silesia in Katowice.
+            I am an <span className='special'>Associate Analyst I</span> at AML RightSource and a <span className='special'>Law student</span> at Jagiellonian University in Kraków.
             My work focuses on <span className='special'>Machine Learning</span> and <span className='special'>Data Science</span>, with published research in <span className='special'>feature selection</span> and attribute weighting applied to stylometry.
             I work day to day with <span className='special'>Python</span>, optimizing AI model outputs and building reliable, data-driven solutions while continuously exploring new techniques in the field.
         </p>
