@@ -8,25 +8,23 @@ function Home() {
         <h2>About me</h2>
 
         <p>
-            I am a <a className='special'>Computer Science</a> student specializing in <a className='special'>Software Engineering</a>, 
-            with a strong passion for <a className='special'>Data Science</a>, <a className='special'>Python</a> programming, and <a className='special'>Web Development</a>. My focus is on building efficient, 
-            scalable solutions while continuously learning and exploring the latest technologies in the field.
+            I am an <span className='special'>AI Research Associate</span> and a <span className='special'>Master's student in Computer Science</span> at the University of Silesia in Katowice.
+            My work focuses on <span className='special'>Machine Learning</span> and <span className='special'>Data Science</span>, with published research in <span className='special'>feature selection</span> and attribute weighting applied to stylometry.
+            I work day to day with <span className='special'>Python</span>, optimizing AI model outputs and building reliable, data-driven solutions while continuously exploring new techniques in the field.
         </p>
 
         <div className='keen-on-home'>
           <h2>Keen on</h2>
 
-          <p>
-            <ul>
-              <li>Python</li>
-              <li>PyTorch</li>
-              <li>SQL</li>
-              <li>PL/SQL</li>
-              <li>R</li>
-              <li>JavaScript</li>
-              <li>React</li>
-            </ul>
-          </p>
+          <ul>
+            <li>Python</li>
+            <li>PyTorch</li>
+            <li>SQL</li>
+            <li>PL/SQL</li>
+            <li>R</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
 
 
 
@@ -34,7 +32,7 @@ function Home() {
         </div>
 
         <div className='course-home'>
-          <h2>Currently enroled course</h2>
+          <h2>Currently enrolled course</h2>
 
 
           

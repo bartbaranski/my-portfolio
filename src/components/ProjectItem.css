@@ -3,41 +3,53 @@
 .project-item {
   width: 300px;
   margin: 15px;
+  padding: 0;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
+  font: inherit;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   overflow: hidden;
-  transition: transform 0.2s;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
 
 .project-item:hover {
-  transform: scale(1.05);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-item:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.4);
+  outline-offset: 3px;
 }
 
 .project-image {
   width: 100%;
-  height: auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
 }
 
 .project-title {
-  margin: 10px 0;
-  color: #fff;
+  margin: 14px 0 10px;
+  color: var(--heading);
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .project-technologies {
-  margin-bottom: 15px;
+  padding: 0 12px 16px;
 }
 
 .technology-badge {
   display: inline-block;
-  background-color: #fff;
-  color: #000;
-  padding: 5px 10px;
-  margin: 5px 5px 0 0;
-  border-radius: 20px;
-  font-size: 0.9em;
-  font-weight: bold;
+  background-color: var(--accent-soft);
+  color: var(--accent-dark);
+  padding: 5px 12px;
+  margin: 4px 4px 0 0;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
 }

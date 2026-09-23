@@ -16,7 +16,12 @@ function ProjectItem({ project }) {
 
   return (
     <>
-      <div className="project-item" onClick={handleItemClick}>
+      <button
+        type="button"
+        className="project-item"
+        onClick={handleItemClick}
+        aria-label={`View details for ${project.title}`}
+      >
         <img src={project.image} alt={project.title} className="project-image" />
         <h3 className="project-title">{project.title}</h3>
         <div className="project-technologies">
@@ -26,7 +31,7 @@ function ProjectItem({ project }) {
             </span>
           ))}
         </div>
-      </div>
+      </button>
       <ProjectModal isOpen={isModalOpen} onClose={handleCloseModal} project={project} />
     </>
   );

@@ -1,8 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders the portfolio navigation and home page', () => {
+  const { container } = render(<App />);
+
+  expect(container).toHaveTextContent('Bartłomiej Barański');
+  expect(container).toHaveTextContent('About me');
+  expect(container).toHaveTextContent('Projects');
 });

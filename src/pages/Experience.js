@@ -6,6 +6,18 @@ function Experience() {
       <h2>Experience</h2>
 
       <div className='position-exp'>
+        <p className='title-exp'>AI Research Associate</p>
+        <p className='workplace-name-exp'>Keywords Studios, Katowice, Poland</p>
+        <p className='date-edu'>07.2025 - Present</p>
+        <ul>
+          <li>Optimized AI model outputs using prompt engineering.</li>
+          <li>Performed Quality Checks (QC) on AI-generated content and code (Python, JSON, JavaScript)
+              for accuracy and guideline alignment.</li>
+          <li>Conducted peer reviews to maintain high quality standards across the team.</li>
+        </ul>
+      </div>
+
+      <div className='position-exp'>
         <p className='title-exp'>Junior Python Developer Internship</p>
         <p className='workplace-name-exp'>Urząd Marszałkowski Województwa Śląskiego, Katowice, Poland</p>
         <p className='date-edu'>07.2024</p>

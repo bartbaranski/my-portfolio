@@ -15,7 +15,12 @@ function ProjectModal({ isOpen, onClose, project }) {
       modalRef.current.focus();
       setCurrentImageIndex(0); // Reset to first image when modal opens
       setIsImageLoaded(false);
+      document.body.style.overflow = 'hidden';
     }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
   }, [isOpen]);
 
   const handleKeyDown = (e) => {
@@ -70,7 +75,7 @@ function ProjectModal({ isOpen, onClose, project }) {
           <div className="modal-image-container">
             <img
               src={project.images[currentImageIndex]}
-              alt={`${project.title} - Image ${currentImageIndex + 1}`}
+              alt={`${project.title} — view ${currentImageIndex + 1}`}
               className={`modal-image ${isImageLoaded ? 'modal-image-loaded' : ''}`}
               onLoad={handleImageLoad}
               loading="lazy"

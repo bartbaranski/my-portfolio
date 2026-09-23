@@ -8,12 +8,16 @@ import Education from './pages/Education';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Certificates from './pages/Certificates';
+import Publications from './pages/Publications';
 
 import './App.css';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router
+      basename={process.env.PUBLIC_URL}
+      future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+    >
       <div className="App">
         <Navbar />
         {/* Move the Container here */}
@@ -24,6 +28,7 @@ function App() {
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/certificates" element={<Certificates />} />
+            <Route path="/publications" element={<Publications />} />
           </Routes>
         </Container>
       </div>

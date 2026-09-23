@@ -9,13 +9,14 @@ function Certificates() {
         <h4><a href='https://www.linkedin.com/in/bartlomiej-baranski-bartbaranski/details/certifications/'>Credentials</a></h4>
 
         <div className='cur-cert'>
-          <h2>Currently enroled course</h2>
+          <h2>Currently enrolled course</h2>
           <div className='position-cur-cert'>
           <p className='title-cert'>Machine Learning Specialization</p>
           <p className='org-cert'>STANFORD UNIVERSITY, DEEPLEARNING.AI</p>
           </div>
         </div>
 
+        <div className='certificates-grid'>
         <div className='position-cert'>
             <p className='title-cert'>IBM Data Science</p>
             <p className='org-cert'>IBM</p>
@@ -42,11 +43,6 @@ function Certificates() {
         </div>
 
         <div className='position-cert'>
-            <p className='title-cert'>AWS Fundamentals</p>
-            <p className='org-cert'>Amazon Web Services</p>
-        </div>
-
-        <div className='position-cert'>
             <p className='title-cert'>Introduction to MongoDB</p>
             <p className='org-cert'>MongoDB</p>
         </div>
@@ -65,8 +61,9 @@ function Certificates() {
             <p className='title-cert'>First Certificate in English - FCE</p>
             <p className='org-cert'>Cambridge Assessment English</p>
         </div>
+        </div>
 
-  
+
     </div>
       
   );

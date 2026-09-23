@@ -1,117 +1,327 @@
-body {
-  margin: 0;
-  font-family: "Lucida Console", "Courier New", monospace;
-  background: url('./assets/background.webp') no-repeat center center fixed;
-  background-size: cover;
-  color: #ffffff;
-
-}
+/* src/App.css */
 
 .App {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
   min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 100% -10%, var(--bg-accent), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, #eaf0fb, transparent 55%),
+    var(--bg);
 }
 
 .content {
   padding: 20px;
-  
 }
 
+/* ---------- Page layout ---------- */
 .page-content {
-  max-width: 800px;
-  margin:  auto;
+  max-width: 820px;
+  margin: 0 auto;
   text-align: left;
-  padding-top: 2em;
-
 }
 
-.page-content p {
-  line-height: 1.25em;
+.page-content > p {
+  color: var(--text);
+  font-size: 1.05rem;
 }
 
-h2, h4 {
-  color: #7289da;
-  text-align: center;
+/* ---------- Headings ---------- */
+h2 {
+  color: var(--heading);
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+}
+
+.page-content > h2:first-child {
+  position: relative;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-content > h2:first-child::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--accent);
+}
+
+h3 {
+  color: var(--heading);
+  font-weight: 700;
+}
+
+h4 {
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 1.5rem;
 }
 
 .special {
-  font-size: larger;
-  font-weight: bolder;
+  color: var(--accent-dark);
+  font-weight: 600;
 }
 
-.keen-on-home {
-  width: 50%;
-  float: left;
-
-}
-
+/* ---------- Home ---------- */
+.keen-on-home,
 .course-home {
   width: 50%;
   float: left;
+  margin-top: 1.5rem;
+}
+
+.keen-on-home h2,
+.course-home h2 {
+  font-size: 1.25rem;
+}
+
+.keen-on-home ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.keen-on-home li {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.course-home {
+  padding-left: 1.5rem;
 }
 
 .title-home {
-  font-size: 1.25em;
-  font-weight: bolder;
-  margin-bottom: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--heading);
+  margin-bottom: 0.25rem;
 }
 
-
-.title-edu, .title-exp, .title-cert {
-  font-size: 1.3em;
-  font-weight: bolder;
-  margin-bottom: -0.5em;
+.institute-home {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
+/* ---------- Card blocks (Education / Experience) ---------- */
+.degree-edu,
+.position-exp {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
 
+.degree-edu:hover,
+.position-exp:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
 
+.title-edu,
+.title-exp {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--heading);
+  margin: 0 0 0.35rem;
+}
+
+.uni-name-edu,
+.workplace-name-exp {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  margin: 0 0 0.25rem;
+}
 
 .spec-edu {
-  font-size: 1em;
-  margin-bottom: -0.5em;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0 0 0.25rem;
 }
 
-
-
-
-.uni-name-edu, .workplace-name-exp, .org-cert {
-  font-size: 1.2em;
-  margin-bottom: -0.5em;
+.date-edu {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin: 0;
 }
 
-
-
-
-.date-edu, .date-edu {
-  font-size: 1em;
+.position-exp ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text);
 }
 
-
-.degree-edu, .position-exp, .position-cert {
-  border-left: solid;
-  padding-left: 1em;
+.position-exp li {
+  margin-bottom: 0.35rem;
 }
 
+/* ---------- Certificates ---------- */
+.cur-cert {
+  display: block;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
 
-.degree-edu, .position-exp {
-  margin-bottom: 3em;
+.cur-cert h2 {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  opacity: 0.9;
+  margin-bottom: 0.75rem;
+}
+
+.cur-cert .title-cert {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.cur-cert .org-cert {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .position-cert {
-  width: 45%;
-  display: inline-block;
-  margin-top: 2em;
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.9rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+.position-cert:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
 
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem;
+}
+
+.certificates-grid .position-cert {
+  margin-bottom: 0;
+}
 
 .title-cert {
-  margin-top: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--heading);
+  margin: 0 0 0.25rem;
 }
 
+.org-cert {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+}
 
-.cur-cert {
+/* ---------- Publications ---------- */
+.publication-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.publication-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.title-pub {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--heading);
+  margin: 0 0 0.4rem;
+}
+
+.journal-pub {
+  font-size: 0.95rem;
+  color: var(--accent-dark);
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+}
+
+.authors-pub {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin: 0 0 0.3rem;
+}
+
+.date-pub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0 0 0.5rem;
+}
+
+.link-pub {
+  margin: 0 0 0.5rem;
+}
+
+.link-pub a {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.tags-pub {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin: 0;
+}
+
+/* ---------- Utility / clearfix ---------- */
+.page-content::after {
+  content: '';
   display: block;
-  float: right;
+  clear: both;
 }
 
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .keen-on-home,
+  .course-home {
+    width: 100%;
+    float: none;
+    padding-left: 0;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+}

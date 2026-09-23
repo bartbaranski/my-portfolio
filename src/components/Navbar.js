@@ -1,8 +1,8 @@
 // src/components/Navbar.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaOrcid } from 'react-icons/fa';
 
 function Navbar() {
   return (
@@ -16,14 +16,18 @@ function Navbar() {
           <a href="https://github.com/bartbaranski" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
+          <a href="https://orcid.org/0009-0003-1805-6432" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+            <FaOrcid />
+          </a>
         </div>
         <div className="separator"></div>
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/education">Education</Link></li>
-          <li><Link to="/experience">Experience</Link></li>
-          <li><Link to="/certificates">Certificates</Link></li>
+          <li><NavLink to="/" end>Home</NavLink></li>
+          <li><NavLink to="/experience">Experience</NavLink></li>
+          <li><NavLink to="/projects">Projects</NavLink></li>
+          <li><NavLink to="/education">Education</NavLink></li>
+          <li><NavLink to="/publications">Publications</NavLink></li>
+          <li><NavLink to="/certificates">Certificates</NavLink></li>
         </ul>
       </div>
     </nav>
