@@ -8,9 +8,9 @@ function Home() {
         <h2>About me</h2>
 
         <p>
-            I am an <span className='special'>Associate Analyst I</span> at AML RightSource and a <span className='special'>Law student</span> at Jagiellonian University in Kraków.
-            My work focuses on <span className='special'>Machine Learning</span> and <span className='special'>Data Science</span>, with published research in <span className='special'>feature selection</span> and attribute weighting applied to stylometry.
-            I work day to day with <span className='special'>Python</span>, optimizing AI model outputs and building reliable, data-driven solutions while continuously exploring new techniques in the field.
+            I am an <span className='special'>Associate Analyst I</span> at AML RightSource and a <span className='special'>Master's student in Law</span> at Jagiellonian University in Kraków.
+            My interests connect <span className='special'>law</span>, <span className='special'>Anti-Money Laundering (AML)</span>, and <span className='special'>modern technologies</span> with a strong foundation in <span className='special'>Machine Learning</span> and <span className='special'>Data Science</span>.
+            I have published research in <span className='special'>feature selection</span> and attribute weighting applied to stylometry, and I use <span className='special'>Python</span> to develop reliable, data-driven solutions.
         </p>
 
         <div className='keen-on-home'>

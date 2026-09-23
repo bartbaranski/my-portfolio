@@ -11,7 +11,7 @@ function Education() {
           <h3 className="education-col-title">Studies</h3>
 
           <div className='degree-edu'>
-            <p className='title-edu'>Law</p>
+            <p className='title-edu'>Master's Degree in Law</p>
             <p className='uni-name-edu'>Jagiellonian University in Kraków</p>
             <p className='date-edu'>10.2026 - Present</p>
           </div>
